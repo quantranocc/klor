@@ -50,44 +50,6 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-
-        combo_closetab {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&macro_closetab>;
-        };
-
-        combo_lasttab {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
-            bindings = <&macro_lasttab>;
-        };
-    };
-
-    macros {
-        macro_closetab: macro_closetab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp F4>,
-                <&macro_release>,
-                <&kp LCTRL>;
-        };
-
-        macro_lasttab: macro_lasttab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp LS(T)>,
-                <&macro_release>,
-                <&kp LCTRL>;
-        };
     };
 
     keymap {
